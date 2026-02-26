@@ -244,41 +244,41 @@ button,
 }
 
 .twitter::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f099";
 }
 
 .facebook::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f09a";
 }
 
 .instagram::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f16d";
 }
 
 .github::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f09b";
 }
 
 .stackoverflow::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f16c";
 }
 
 .youtube::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f167";
 }
 
 .medium::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f23a";
 }
 
 .linkedin::before {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   content: "\f08c";
 }
