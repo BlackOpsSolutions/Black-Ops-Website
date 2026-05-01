@@ -9,41 +9,31 @@
       <stop offset="0%" stop-color="#1b1b24"/>
       <stop offset="100%" stop-color="#0a0a0d"/>
     </linearGradient>
-    <radialGradient id="avPulse" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="avShieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
   </defs>
 
-  <!-- Mark: hex frame matching BOS wordmark -->
+  <!-- Outer hex frame (matches BOS wordmark mark) -->
   <g transform="translate(6 6)">
-    <!-- Outer hex shield (same geometry as BOS mark) -->
     <path d="M30 0 L57 14 L57 46 L30 60 L3 46 L3 14 Z"
           fill="url(#avHexFill)" stroke="url(#avAccent)" stroke-width="2"/>
-
-    <!-- Inner thin hex outline -->
     <path d="M30 6 L51 17 L51 43 L30 54 L9 43 L9 17 Z"
           fill="none" stroke="#ef4444" stroke-width="0.6" opacity="0.45"/>
 
-    <!-- Pulse glow -->
-    <circle cx="30" cy="30" r="18" fill="url(#avPulse)"/>
-
-    <!-- Shield silhouette with alert -->
-    <g transform="translate(30 30)">
-      <!-- Shield -->
-      <path d="M0,-14 L11,-9 L11,3 C11,8 6,12 0,14 C-6,12 -11,8 -11,3 L-11,-9 Z"
-            fill="none" stroke="url(#avAccent)" stroke-width="2" stroke-linejoin="round"/>
-      <!-- Exclamation -->
-      <rect x="-1.2" y="-7" width="2.4" height="9" rx="1.1" fill="url(#avAccent)"/>
-      <circle cx="0" cy="6" r="1.4" fill="url(#avAccent)"/>
-    </g>
-
-    <!-- Crosshair ticks (matches BOS mark) -->
-    <g stroke="#ef4444" stroke-width="1.2" stroke-linecap="round" opacity="0.7">
-      <line x1="30" y1="10" x2="30" y2="13"/>
-      <line x1="30" y1="47" x2="30" y2="50"/>
-      <line x1="13" y1="30" x2="16" y2="30"/>
-      <line x1="44" y1="30" x2="47" y2="30"/>
+    <!-- Real AlertaVuln shield, scaled to fit (their 64-unit shield → 36-unit, centred on 30,30) -->
+    <g transform="translate(30 30) scale(0.5625) translate(-32 -32)">
+      <path d="M32 4 L56 16 L56 32 C56 48 44 58 32 62 C20 58 8 48 8 32 L8 16 Z"
+            fill="url(#avShieldGrad)" stroke="#1e293b" stroke-width="2"/>
+      <path d="M32 10 L50 20 L50 32 C50 44 40 53 32 56 C24 53 14 44 14 32 L14 20 Z"
+            fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <line x1="14" y1="27" x2="50" y2="27" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+      <line x1="12" y1="40" x2="52" y2="40" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
     </g>
   </g>
 

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield outline -->
+  <path d="M32 4 L56 16 L56 32 C56 48 44 58 32 62 C20 58 8 48 8 32 L8 16 Z" fill="url(#shieldGrad)" stroke="#1e293b" stroke-width="2"/>
+  <!-- Inner shield highlight -->
+  <path d="M32 10 L50 20 L50 32 C50 44 40 53 32 56 C24 53 14 44 14 32 L14 20 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- Horizontal dividers -->
+  <line x1="14" y1="27" x2="50" y2="27" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+  <line x1="12" y1="40" x2="52" y2="40" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+</svg>

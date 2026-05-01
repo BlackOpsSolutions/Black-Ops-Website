@@ -57,8 +57,7 @@ button:focus-visible,
 .project-card:focus-visible,
 .nav-links a:focus-visible,
 .nav-cta:focus-visible,
-.footer-social a:focus-visible,
-.footer-links a:focus-visible {
+.footer-social a:focus-visible {
     outline: 2px solid #ffd9bd;
     outline-offset: 3px;
     border-radius: 6px;
@@ -513,17 +512,18 @@ a.project-card:hover {
     width: 44px; height: 44px;
 }
 .footer-social a:hover { color: var(--accent); }
-
-.footer-links {
-    list-style: none; padding: 0; margin: 0;
-    display: flex; gap: 1rem; flex-wrap: wrap;
+.footer-social-logo {
+    width: 22px; height: 22px; display: block;
+    filter: grayscale(1) brightness(1.1);
+    opacity: 0.7;
+    transition: filter 0.18s ease, opacity 0.18s ease, transform 0.18s ease;
 }
-.footer-links a {
-    color: var(--muted); font-size: 0.85rem; font-weight: 500;
-    text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.15);
-    text-underline-offset: 3px;
+.footer-social a:hover .footer-social-logo,
+.footer-social a:focus-visible .footer-social-logo {
+    filter: grayscale(0) brightness(1);
+    opacity: 1;
+    transform: scale(1.05);
 }
-.footer-links a:hover { color: var(--accent-2); text-decoration-color: currentColor; }
 
 /* ---------- MOBILE FINAL POLISH ---------- */
 @media (max-width: 600px) {
