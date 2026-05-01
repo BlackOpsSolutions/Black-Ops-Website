@@ -52,7 +52,7 @@
     <text x="80" y="34" font-size="22" font-weight="800" letter-spacing="2">
       ALERTA<tspan fill="url(#avAccent)">VULN</tspan>
     </text>
-    <text x="80" y="54" font-size="9.5" font-weight="600" letter-spacing="6" fill="#9a9aa8">
+    <text x="80" y="54" font-size="9" font-weight="600" letter-spacing="3.4" fill="#9a9aa8">
       VULNERABILITY · MONITORING
     </text>
   </g>
