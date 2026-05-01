@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" role="img" aria-label="AlertaVuln">
+  <title>AlertaVuln</title>
+  <defs>
+    <linearGradient id="avAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="avHexFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b1b24"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <radialGradient id="avPulse" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Mark: hex frame matching BOS wordmark -->
+  <g transform="translate(6 6)">
+    <!-- Outer hex shield (same geometry as BOS mark) -->
+    <path d="M30 0 L57 14 L57 46 L30 60 L3 46 L3 14 Z"
+          fill="url(#avHexFill)" stroke="url(#avAccent)" stroke-width="2"/>
+
+    <!-- Inner thin hex outline -->
+    <path d="M30 6 L51 17 L51 43 L30 54 L9 43 L9 17 Z"
+          fill="none" stroke="#ef4444" stroke-width="0.6" opacity="0.45"/>
+
+    <!-- Pulse glow -->
+    <circle cx="30" cy="30" r="18" fill="url(#avPulse)"/>
+
+    <!-- Shield silhouette with alert -->
+    <g transform="translate(30 30)">
+      <!-- Shield -->
+      <path d="M0,-14 L11,-9 L11,3 C11,8 6,12 0,14 C-6,12 -11,8 -11,3 L-11,-9 Z"
+            fill="none" stroke="url(#avAccent)" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Exclamation -->
+      <rect x="-1.2" y="-7" width="2.4" height="9" rx="1.1" fill="url(#avAccent)"/>
+      <circle cx="0" cy="6" r="1.4" fill="url(#avAccent)"/>
+    </g>
+
+    <!-- Crosshair ticks (matches BOS mark) -->
+    <g stroke="#ef4444" stroke-width="1.2" stroke-linecap="round" opacity="0.7">
+      <line x1="30" y1="10" x2="30" y2="13"/>
+      <line x1="30" y1="47" x2="30" y2="50"/>
+      <line x1="13" y1="30" x2="16" y2="30"/>
+      <line x1="44" y1="30" x2="47" y2="30"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Inter, 'Segoe UI', sans-serif" fill="#ffffff">
+    <text x="80" y="34" font-size="22" font-weight="800" letter-spacing="2">
+      ALERTA<tspan fill="url(#avAccent)">VULN</tspan>
+    </text>
+    <text x="80" y="54" font-size="9.5" font-weight="600" letter-spacing="6" fill="#9a9aa8">
+      VULNERABILITY · MONITORING
+    </text>
+  </g>
+</svg>

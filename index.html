@@ -1,60 +1,494 @@
 <!doctype html>
-<html lang=en>
+<html lang="en-AU">
 
 <head>
-    <meta charset=UTF-8 />
-    <meta name=viewport content="width=device-width,initial-scale=1" />
-    <meta http-equiv=X-UA-Compatible content="ie=edge" />
-    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
-        integrity=sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO crossorigin=anonymous>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap" rel=stylesheet>
-    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
-    <title>Black Ops Solutions IT</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Black Ops Solutions — IT Consulting, Cyber Security &amp; AI Automation Australia</title>
+    <meta name="description" content="Australian IT consulting &amp; services — cyber security, custom software, SaaS, AI automation, managed IT and migrations. Free initial consult.">
+    <link rel="canonical" href="https://blackops.net.au/">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#0a0a0d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Black Ops Solutions">
+    <meta property="og:title" content="Black Ops Solutions — IT Consulting, Cyber Security &amp; AI Automation Australia">
+    <meta property="og:description" content="Australian IT consulting &amp; services — cyber security, custom software, SaaS, AI automation, managed IT and migrations.">
+    <meta property="og:url" content="https://blackops.net.au/">
+    <meta property="og:image" content="https://blackops.net.au/img/BOS-wordmark.svg">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Black Ops Solutions — IT Consulting &amp; AI Automation Australia">
+    <meta name="twitter:description" content="Cyber security, custom software, SaaS, AI automation, managed IT, migrations.">
+    <meta name="twitter:image" content="https://blackops.net.au/img/BOS-wordmark.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="styles/main.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://blackops.net.au/#org",
+          "name": "Black Ops Solutions",
+          "alternateName": "Black Ops Solutions IT",
+          "url": "https://blackops.net.au/",
+          "logo": "https://blackops.net.au/img/BOS-wordmark.svg",
+          "sameAs": [
+            "https://linkedin.com/company/black-ops-solutions",
+            "https://facebook.com/BlackOpsSolutionsAU",
+            "https://alertavuln.com"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://blackops.net.au/#service",
+          "name": "Black Ops Solutions IT",
+          "url": "https://blackops.net.au/",
+          "image": "https://blackops.net.au/img/BOS-wordmark.svg",
+          "areaServed": { "@type": "Country", "name": "Australia" },
+          "address": { "@type": "PostalAddress", "addressCountry": "AU" },
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "IT Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cyber Security Consulting" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SaaS Development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Consulting & Strategy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed IT Services" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud & Platform Migrations" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & Automation Solutions" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mailserver Deployment" } }
+            ]
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "AlertaVuln",
+          "url": "https://alertavuln.com",
+          "applicationCategory": "SecurityApplication",
+          "operatingSystem": "Web",
+          "publisher": { "@id": "https://blackops.net.au/#org" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD", "description": "Free tier available" }
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://blackops.net.au/",
+          "name": "Black Ops Solutions",
+          "publisher": { "@id": "https://blackops.net.au/#org" }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class=container>
-        <div class=row>
-            <div class="left-wrap col-12 col-md-5">
-                <div class=left>
-                    <p><span class=Logo></span><span class=small><img src="img/BOS-logo-white.png" height = 400pt padding="5"></span></p>
-                    <!--<p><span class=days></span><span class=small> days</span></p>
-                    <p><span class=hours></span><span class=small> hours</span></p>
-                    <p>&nbsp;&nbsp;<span class=minutes></span><span class=small> minutes</span></p>
-                    <p>&nbsp;&nbsp;<span class=seconds></span><span class=small> seconds</span></p>
-                    -->
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="topnav">
+        <div class="topnav-inner">
+            <a href="#top" class="brand" aria-label="Black Ops Solutions IT">
+                <img src="img/BOS-wordmark.svg" alt="Black Ops Solutions IT" class="brand-wordmark" width="280" height="56">
+            </a>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ai">AI &amp; Automation</a></li>
+                <li><a href="#alertavuln">AlertaVuln</a></li>
+                <li><a href="#work">Our Work</a></li>
+            </ul>
+            <div class="nav-end">
+                <a href="#contact" class="nav-cta">Book a Consult</a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+    <header id="top" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-inner">
+            <div class="hero-tag"><span class="dot" aria-hidden="true"></span> Full-spectrum IT — built for Australian businesses</div>
+            <h1 class="hero-title">Anything IT.<br><span class="accent">We build, secure, and automate it.</span></h1>
+            <p class="hero-sub">
+                From cyber security and custom software to SaaS, infrastructure, migrations and physical hardware —
+                Black Ops Solutions delivers end-to-end IT for Australian businesses that want to move faster without breaking things.
+            </p>
+            <div class="hero-cta">
+                <a href="https://calendar.app.google/WDQws5vnDdd2JW9k8" target="_blank" rel="noopener noreferrer" class="btn btn-primary-bos">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> Book a Consultation Call
+                </a>
+                <a href="#services" class="btn btn-ghost-bos">Explore Services <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>10+</strong><span>Service domains</span></div>
+                <div><strong>AI-first</strong><span>Automation specialists</span></div>
+                <div><strong>End-to-end</strong><span>Strategy → ship → support</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow">What we do</div>
+                <h2>Services across the full IT stack</h2>
+                <p class="lead">If it plugs in, runs code, ships data, or needs a human to think about it — we cover it. One team, one accountable partner.</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                    <h3>Cyber Security Consulting</h3>
+                    <p>Vulnerability monitoring, hardening, incident response, and defensive posture for Australian SMBs and enterprises.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                    <h3>Custom Software Development</h3>
+                    <p>Web apps, internal tools, APIs, NPM packages and developer tooling — built for your workflow, not against it.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
+                    <h3>SaaS Development</h3>
+                    <p>Production-grade SaaS from idea to subscribers: auth, billing, multi-tenant, observability, the lot.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></div>
+                    <h3>IT Consulting &amp; Strategy</h3>
+                    <p>Strategy, architecture, vendor selection and roadmaps that actually survive contact with reality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                    <h3>Managed IT Services</h3>
+                    <p>Ongoing management of your stack — uptime, patching, backups, monitoring and on-call response.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i></div>
+                    <h3>Cloud &amp; Platform Migrations</h3>
+                    <p>Cloud, platform, mailserver, database and tenancy migrations done with rollback plans, not prayers.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                    <h3>Custom Tech Stacks</h3>
+                    <p>Self-hosted, hybrid or cloud — opinionated stacks tailored to your scale, budget and risk profile.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+                    <h3>Physical Hardware Installs</h3>
+                    <p>Network, server, and on-site hardware installs &amp; rack-and-stack — when the cloud isn't the answer.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></div>
+                    <h3>Mailserver Deployments</h3>
+                    <p>Self-hosted mail, DKIM/SPF/DMARC, deliverability tuning, and mail platform migrations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-brands fa-discord" aria-hidden="true"></i></div>
+                    <h3>Custom Discord Bot Development</h3>
+                    <p>Community automation, moderation, integrations and AI-powered bots for servers and businesses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+                    <h3>Automation</h3>
+                    <p>Replace manual toil — workflow automation, integrations, scripts and orchestration that just runs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                    <h3>AI Solutions &amp; Integration</h3>
+                    <p>Practical AI: assistants, agents, RAG, classifiers and LLM integrations that ship to production.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-7 right">
-                <div class=mainInfo>
-                    <h1>Black Ops Solutions IT</h1>
-                    <p class=slogan>IT Consulting to help your business reduce manual load and provide a framework for a better future.</p>
-                    <div style="margin-left: 2em;">
-                        <a href="https://calendar.app.google/WDQws5vnDdd2JW9k8" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: fit-content; padding: 0.5rem 1.5rem; white-space: nowrap;">Book a Consultation Call</a>
-                    </div>
-                    <!-- <form class=form-subscribe action=#> <input type=email class=form placeholder="Your email address"
-                            required> <button type=submit>Subscribe</button> </form> -->
+        </div>
+    </section>
+
+    <section id="ai" class="section section-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="eyebrow">Our specialty</div>
+                    <h2>AI &amp; Automation — done properly</h2>
+                    <p class="lead">
+                        Automation and AI are the new hot topic — and where we excel. We don't sell hype.
+                        We ship working systems: agents that actually do work, automations that reduce real toil,
+                        and AI integrations engineered for accuracy, cost and security.
+                    </p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> AI agents &amp; assistants integrated into your existing tools</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> RAG pipelines over your private data — secured and auditable</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Workflow automation across CRMs, mail, ticketing and ops</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Custom LLM tooling, evals, and guardrails</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Discord, Slack and chat-based AI ops bots</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-bos mt-3">Talk to us about AI <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <ul class=icon-list>
-                    <li class=icon><a href=https://linkedin.com/company/black-ops-solutions target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class=icon><a href=https://facebook.com/BlackOpsSolutionsAU target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <!-- 
-                    <li class=icon><a class=twitter href=google.com></a></li>
-                    <li class=icon><a class=instagram href=google.com></a></li>
-                    <li class=icon><a class=youtube href=google.com></a></li>
-                    <li class=icon><a class=github href=google.com></a></li>
-                    <li class=icon><a class=stackoverflow href=google.com></a></li>
-                    <li class=icon><a class=medium href=google.com></a></li> 
-                    -->
-                    
+                <div class="col-lg-6">
+                    <div class="ai-panel" aria-hidden="true">
+                        <div class="ai-panel-header">
+                            <span class="dot red"></span>
+                            <span class="dot amber"></span>
+                            <span class="dot green"></span>
+                            <span class="ai-panel-title">automation.run</span>
+                        </div>
+                        <pre class="ai-code"><span class="c">// What "AI &amp; automation" looks like with us</span>
+<span class="k">const</span> stack = {
+  agents:   <span class="s">"task-running, tool-using, monitored"</span>,
+  rag:      <span class="s">"your data, your retrieval, your control"</span>,
+  guardrails: <span class="s">"evals + policy + fallback"</span>,
+  ops:      <span class="s">"alerts, dashboards, on-call"</span>,
+};
+
+<span class="k">await</span> deploy(stack);
+<span class="c">// → fewer tickets, faster ops, happier team</span></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alertavuln" class="section section-feature">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Our Product</div>
+
+                <figure class="sticker-frame">
+                    <div class="sticker-slot">
+                        <img src="img/BOS-wordmark.svg" alt="" width="280" height="56">
+                    </div>
+                    <div class="sticker-divider" aria-hidden="true">
+                        <span></span><i class="fa-solid fa-plus" aria-hidden="true"></i><span></span>
+                    </div>
+                    <div class="sticker-slot">
+                        <img src="img/AlertaVuln-sticker.svg" alt="" width="280" height="56">
+                    </div>
+                    <figcaption class="sr-only">Black Ops Solutions and AlertaVuln</figcaption>
+                </figure>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2 class="feature-title">AlertaVuln — take cyber security seriously.</h2>
+                        <p class="feature-lead">
+                            Built and maintained by Black Ops Solutions. AlertaVuln keeps you ahead of the
+                            vulnerabilities that put your business at risk — continuously, without the noise.
+                        </p>
+                        <p>
+                            With AI-assisted development everywhere, "vibe coders" shipping code they don't fully understand,
+                            and supply-chain attacks hitting more projects every month — passive security isn't enough.
+                            <strong>We recommend everyone takes cyber seriously today.</strong> That's why AlertaVuln has a
+                            <strong>free tier</strong> — anyone can start protecting their stack right now.
+                        </p>
+                        <div class="feature-cta">
+                            <a href="https://alertavuln.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary-bos">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Try AlertaVuln Free
+                            </a>
+                            <a href="#contact" class="btn btn-ghost-bos">Need it managed for you?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="feature-stats">
+                            <div class="stat-row">
+                                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                                <div><strong>Continuous</strong><span>Always-on vulnerability monitoring</span></div>
+                            </div>
+                            <div class="stat-row">
+                                <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                                <div><strong>Free tier</strong><span>Get started at no cost</span></div>
+                            </div>
+                            <div class="stat-row">
+                                <i class="fa-solid fa-link-slash" aria-hidden="true"></i>
+                                <div><strong>Supply-chain aware</strong><span>Catches what manual review misses</span></div>
+                            </div>
+                            <div class="stat-row">
+                                <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+                                <div><strong>Built by us</strong><span>Backed by the team behind your IT</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow">Selected work</div>
+                <h2>Projects we've shipped</h2>
+                <p class="lead">A mix of products, tools and client builds — from public SaaS to internal stacks and bare-metal installs.</p>
+            </div>
+
+            <div class="project-grid">
+                <a href="https://alertavuln.com" target="_blank" rel="noopener noreferrer" class="project-card project-card-feature">
+                    <div class="project-meta">
+                        <span class="tag tag-accent">Our Product</span>
+                        <span class="tag">Cyber Security</span>
+                    </div>
+                    <h3>AlertaVuln</h3>
+                    <p>Continuous vulnerability monitoring with a free tier. Our flagship security product.</p>
+                    <span class="project-link">alertavuln.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+
+                <a href="https://chocolatebarsentertainment.com.au" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Client Build</span>
+                        <span class="tag">Web</span>
+                    </div>
+                    <h3>Chocolate Bars Entertainment</h3>
+                    <p>Brand presence and web build for an Australian entertainment business.</p>
+                    <span class="project-link">chocolatebarsentertainment.com.au <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">SaaS</span>
+                        <span class="tag">Internal Tools</span>
+                    </div>
+                    <h3>Workplace SaaS Tooling</h3>
+                    <p>A suite of SaaS tools deployed across teams to replace manual processes and brittle spreadsheets.</p>
+                    <span class="project-link">Private engagement</span>
+                </div>
+
+                <a href="https://npm-package-universe.blackops.net.au/" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Tool</span>
+                        <span class="tag">Developer Tools</span>
+                    </div>
+                    <h3>NPM Package Universe</h3>
+                    <p>Interactive explorer for the NPM ecosystem — visualise packages, dependencies and the wider universe of modules.</p>
+                    <span class="project-link">npm-package-universe.blackops.net.au <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+
+                <a href="https://netlogviewer.blackops.net.au/" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Tool</span>
+                        <span class="tag">Network</span>
+                    </div>
+                    <h3>Netlog Viewer</h3>
+                    <p>Custom network log viewer for inspecting and triaging traffic captures fast.</p>
+                    <span class="project-link">netlogviewer.blackops.net.au <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+
+                <a href="https://kingshot.blackops.net.au/" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Automation</span>
+                        <span class="tag"><i class="fa-brands fa-discord" aria-hidden="true"></i> Discord</span>
+                    </div>
+                    <h3>Custom Discord Bots</h3>
+                    <p>Bespoke moderation, community and AI-powered Discord bots — including the Kingshot bot, live in production.</p>
+                    <span class="project-link">kingshot.blackops.net.au <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                </a>
+
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Infrastructure</span>
+                        <span class="tag">Email</span>
+                    </div>
+                    <h3>Mailserver Deployments</h3>
+                    <p>Self-hosted mail platforms with deliverability tuning, DKIM/SPF/DMARC and migrations.</p>
+                    <span class="project-link">Production environments</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Architecture</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                    <h3>Custom Stacks</h3>
+                    <p>End-to-end stack design and deployment — chosen for the workload, not the trend cycle.</p>
+                    <span class="project-link">Various clients</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="tag">Hardware</span>
+                        <span class="tag">On-site</span>
+                    </div>
+                    <h3>Physical Hardware Installs</h3>
+                    <p>Network gear, servers and on-prem hardware — installed, configured and handed over running.</p>
+                    <span class="project-link">On-site engagements</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="eyebrow eyebrow-light">Get in touch</div>
+                        <h2 class="contact-title">Let's scope your project.</h2>
+                        <p class="contact-lead">
+                            Tell us what you're trying to build, fix or secure. We'll come back with a plan,
+                            an honest scope, and a path forward — whether that's an hour of advice or a multi-month build.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="https://calendar.app.google/WDQws5vnDdd2JW9k8" target="_blank" rel="noopener noreferrer" class="btn btn-primary-bos btn-lg-bos">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i> Book a Consultation Call
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="contact-list">
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Australia — remote &amp; on-site</li>
+                            <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Response within one business day</li>
+                            <li><i class="fa-solid fa-handshake" aria-hidden="true"></i> Free initial consultation</li>
+                            <li>
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <a href="https://linkedin.com/company/black-ops-solutions" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                &nbsp;·&nbsp;
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <a href="https://facebook.com/BlackOpsSolutionsAU" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="img/BOS-wordmark.svg" alt="" class="footer-wordmark" width="280" height="56">
+            </div>
+            <div class="footer-meta">
+                <span>&copy; <span id="year"></span> Black Ops Solutions. All rights reserved.</span>
+                <ul class="footer-links" aria-label="Brand assets">
+                    <li><a href="img/BOS-wordmark.svg" download="BlackOpsSolutions-wordmark.svg">Logo SVG</a></li>
+                    <li><a href="img/AlertaVuln-sticker.svg" download="AlertaVuln-wordmark.svg">AlertaVuln SVG</a></li>
+                </ul>
+                <ul class="footer-social" aria-label="Social links">
+                    <li><a href="https://linkedin.com/company/black-ops-solutions" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://facebook.com/BlackOpsSolutionsAU" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://alertavuln.com" target="_blank" rel="noopener noreferrer" aria-label="AlertaVuln"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <script defer src="scripts/main.js"></script>
 </body>
 
 </html>
